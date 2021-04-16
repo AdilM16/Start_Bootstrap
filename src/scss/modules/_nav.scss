@@ -3,13 +3,14 @@ nav {
     display: flex;
     justify-content: space-around;
     color: white;
+    align-items: center;
     h1 {
         font-size: 18px;
     }
     ul {
         display: flex;
-        padding: 0;
-        width: 10%;
+        
+
         justify-content: space-around;
         
         li {
@@ -19,6 +20,50 @@ nav {
                 color: white;
                 font-size: 12px;
                 
+            }
+        }
+    }
+}
+
+//Media Queries//
+
+@media (min-width: 1008px)  {
+    nav {
+        ul {
+            width: 10%;
+        }
+    }
+}
+@media (min-width: 641px) and (max-width:1007px) {
+    nav {
+        h1{
+            font-size: 16px;
+            margin-left: 10%;
+        }
+        ul {
+            width: 30%;
+            }
+        }
+    }
+
+@media (min-width:320px) and (max-width:640px){
+    nav {
+        h1{
+            font-size: 16px;
+            margin-left: 10%;
+        }
+        ul {
+            width: 30%;
+            li {
+                padding: 3px;    
+            }
+            li:first-of-type {
+                background-color: rgb(238, 9, 121);
+                border-radius: 5px;
+                
+                a {
+                    color: white;
+                }
             }
         }
     }

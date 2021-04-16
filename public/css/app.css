@@ -6123,14 +6123,13 @@ nav {
   display: flex;
   justify-content: space-around;
   color: white;
+  align-items: center;
 }
 nav h1 {
   font-size: 18px;
 }
 nav ul {
   display: flex;
-  padding: 0;
-  width: 10%;
   justify-content: space-around;
 }
 nav ul li {
@@ -6142,59 +6141,255 @@ nav ul li a {
   font-size: 12px;
 }
 
+@media (min-width: 1008px) {
+  nav ul {
+    width: 10%;
+  }
+}
+@media (min-width: 641px) and (max-width: 1007px) {
+  nav h1 {
+    font-size: 16px;
+    margin-left: 10%;
+  }
+  nav ul {
+    width: 30%;
+  }
+}
+@media (min-width: 320px) and (max-width: 640px) {
+  nav h1 {
+    font-size: 16px;
+    margin-left: 10%;
+  }
+  nav ul {
+    width: 30%;
+  }
+  nav ul li {
+    padding: 3px;
+  }
+  nav ul li:first-of-type {
+    background-color: #ee0979;
+    border-radius: 5px;
+  }
+  nav ul li:first-of-type a {
+    color: white;
+  }
+}
 .intro {
   background-color: blue;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 400px;
-}
-.intro h1 {
-  margin: 5% 0 0;
-  font-size: 60px;
-}
-.intro h2 {
-  margin: 1% 0;
-  font-size: 40px;
 }
 .intro button {
-  margin: 1% 0;
   background-color: #ee0979;
   color: white;
-  font-size: 8px;
-  width: 7%;
-  height: 40px;
   border: solid #ee0979;
-  border-radius: 50px;
 }
 
-.boxUn {
-  width: 60%;
-  margin: auto;
-}
-.boxUn .contenant {
-  display: flex;
-  justify-content: space-between;
-  margin: 5% 0;
-}
-.boxUn .contenant img {
-  height: 300px;
-  border-radius: 50%;
-}
-.boxUn .contenant .txt {
-  width: 40%;
-}
-.boxUn .contenant .txt h1 {
-  font-size: 40px;
-}
 footer {
   background-color: black;
   color: white;
-  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 1008px) {
+  .intro {
+    height: 400px;
+  }
+  .intro h1 {
+    margin: 5% 0 0;
+    font-size: 60px;
+  }
+  .intro h2 {
+    margin: 1% 0;
+    font-size: 40px;
+  }
+  .intro button {
+    margin: 1% 0;
+    font-size: 8px;
+    width: 7%;
+    height: 40px;
+    border-radius: 50px;
+  }
+
+  .boxUn {
+    width: 60%;
+    margin: auto;
+  }
+  .boxUn .contenant {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+  }
+  .boxUn .contenant img {
+    height: 300px;
+    border-radius: 50%;
+  }
+  .boxUn .contenant .txt {
+    width: 40%;
+  }
+  .boxUn .contenant .txt h1 {
+    font-size: 40px;
+  }
+
+  footer {
+    height: 80px;
+  }
+}
+@media (min-width: 641px) and (max-width: 1007px) {
+  .intro {
+    height: 600px;
+  }
+  .intro h1 {
+    margin: 25% 0 0;
+    font-size: 50px;
+  }
+  .intro h2 {
+    margin: 1% 0;
+    font-size: 30px;
+  }
+  .intro button {
+    margin: 1% 0;
+    font-size: 8px;
+    width: 14%;
+    height: 40px;
+    border-radius: 50px;
+  }
+
+  .boxUn {
+    width: 90%;
+    margin: auto;
+    color: rgba(0, 0, 0, 0.616);
+  }
+  .boxUn .contenant {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .boxUn .contenant img {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+  }
+  .boxUn .contenant:first-of-type {
+    background-color: lightblue;
+    border-radius: 100px;
+    margin-top: 30px;
+  }
+  .boxUn .contenant:first-of-type img {
+    margin-bottom: 30px;
+  }
+  .boxUn .contenant:first-of-type .txt {
+    width: 90%;
+  }
+  .boxUn .contenant:nth-child(2) {
+    background-color: rgba(40, 138, 130, 0.801);
+    border-radius: 100px;
+    flex-direction: column-reverse;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .boxUn .contenant:nth-child(2) img {
+    margin-bottom: 30px;
+  }
+  .boxUn .contenant:nth-child(2) .txt {
+    width: 90%;
+  }
+  .boxUn .contenant:last-of-type {
+    background-color: rgba(203, 144, 238, 0.719);
+    border-radius: 100px;
+    margin-bottom: 30px;
+  }
+  .boxUn .contenant:last-of-type img {
+    margin-bottom: 30px;
+  }
+  .boxUn .contenant:last-of-type .txt {
+    width: 90%;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 320px) and (max-width: 640px) {
+  .intro {
+    height: 600px;
+  }
+  .intro h1 {
+    margin: 25% 0 0;
+    font-size: 30px;
+  }
+  .intro h2 {
+    margin: 15% 0;
+    font-size: 20px;
+  }
+  .intro button {
+    margin: 1% 0;
+    font-size: 8px;
+    width: 30%;
+    height: 40px;
+    border-radius: 50px;
+  }
+
+  .boxUn {
+    width: 90%;
+    margin: auto;
+    color: rgba(0, 0, 0, 0.616);
+  }
+  .boxUn .contenant {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .boxUn .contenant img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  .boxUn .contenant:first-of-type {
+    background-color: lightblue;
+    border-radius: 100px;
+    margin-top: 30px;
+  }
+  .boxUn .contenant:first-of-type img {
+    margin-bottom: 30px;
+  }
+  .boxUn .contenant:first-of-type .txt {
+    width: 90%;
+  }
+  .boxUn .contenant:nth-child(2) {
+    background-color: rgba(40, 138, 130, 0.801);
+    border-radius: 100px;
+    flex-direction: column-reverse;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .boxUn .contenant:nth-child(2) img {
+    margin-bottom: 30px;
+  }
+  .boxUn .contenant:nth-child(2) .txt {
+    width: 90%;
+  }
+  .boxUn .contenant:last-of-type {
+    background-color: rgba(203, 144, 238, 0.719);
+    border-radius: 100px;
+    margin-bottom: 30px;
+  }
+  .boxUn .contenant:last-of-type img {
+    margin-bottom: 30px;
+  }
+  .boxUn .contenant:last-of-type .txt {
+    width: 90%;
+  }
+
+  footer p {
+    font-size: 10px;
+  }
 }
 body {
   margin: 0;
